@@ -33,8 +33,8 @@ const RegisterScreen = () => {
         navigate("/profile");
         toast.success("Collection created successfully!");
       } else {
-        toast.error("Don't forget the topic 😉");
         console.error("Error creating collection:", response.statusText);
+        toast.error("Error creating collection");
       }
     } catch (error) {
       console.error("Error creating collection:", error);
